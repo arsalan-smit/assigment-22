@@ -7,18 +7,24 @@
     <title>Quiz App</title>
 </head>
 <body onload="quizHandler()">
-    <div class="container">
+    <div class="result" id="result">
+        <h1>Result</h1>
+        <p id="resultPara" class="resultPara">Correct: 5<br>Wrong: 3</p>
+    </div>
+    <div class="start" id="start">
+        <h1>Quiz start</h1>
+        <button onclick="start()">START</button>
+    </div>
+    <div class="container" id="container">
+        <div class="time">
+            <span id="min">15</span><span id="sec">:00</span>
+        </div>
         <div class="heading">Quiz app</div>
         <div class="question-container" id="question-container">
             <!-- Ui question -->
         </div>
         <div class="option" id="option">
-            <!-- <ul>
-                <li>Karachi</li>
-                <li>Lahore</li>
-                <li>Islamabad</li>
-                <li>Peshawar</li>
-            </ul> -->
+            <!-- option -->
         </div>
         <div class="btn">
             <button onclick="nextQuestion()" id="btn">Next</button>
